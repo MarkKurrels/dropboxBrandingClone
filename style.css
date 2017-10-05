@@ -1,59 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 body {
 	margin: 0;
 	font-family: "AtlasGrotesk", "Open Sans", sans-serif;
 	font-size: 13px;
-	color: #3d464d;
 }
+
 h2 {
-	font-size: 17px;
-
+	font-family: "SharpGroteskWide", "Open Sans",sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+	margin: 2em auto;
+	width: 585px;
 }
+
+h4 {
+	font-size: 20px;
+	font-weight: 400;
+	width: 585px;
+	margin: auto;
+}
+.content-plank {
+	margin: 50px 0 0 0;
+}
+p {
+	width: 585px;
+	margin: 20px auto 3px auto;
+	object-position: center;
+	font-size: 18px;
+	line-height: 1.555;
+}
+
+
 nav {
-	border-bottom: 2px #eceded solid;
 	width: 100%;
-	background-color: #FFFFFF;
+	height: 78px;
+	position: fixed;
+	top: 0;
+	border-bottom: 2px solid #fbfbfc;
+	background-color: #fff;
+	margin-bottom: 50px;
+	padding: 0;
+	z-index: 1;
 }
-nav img {
-	margin: 25px 21px;
-}
-.all-content {
-	max-width: 990px;
-	margin: 35px auto;
-}
-.main-content {
-	font-weight: bold;
-	width: 780px;
+
+nav a {
 	float: right;
-}
-.side-nav {
-	float: left;
-	height: 100%;
-	margin: 13px 35px auto 30px;
-}
-.side-nav a {
-	display: block;
-	margin: 11px 0;
+	margin-top: 32px;
+	margin-left: 15px;
 	text-decoration: none;
-	color: #007ee5;
-	font-weight: bold;
+	font-size: 15px;
+	font-weight: 400;
+	color: black;
 }
-.side-nav img {
-	margin: 0 0 25px 0;
+nav a:hover {
+	text-decoration: underline;
 }
-.our-logo {
-	padding: 5px;
-	width: 100%;
+nav .button  {
+	color: #fff;
+	margin-top: 22px;
+	margin-right: 6px;
+	padding: 10px;
+	background-color: #0062ff;
+}
+nav .button:hover {
+	background-color: #3b85ff;
+	text-decoration: none;
+}
+.nav-bar-logo a {
+	float: left;
+	display: inline;
+	margin: auto 10px;
+	padding: 20px 18px;
+}
+.nav-bar-logo img {
+	margin: 0;
+}
+nav .arbor-logo__glyph {
+	width: 32px;
+	height: 36px;
+}
+nav .arbor-logo__logotype.arbor-logo__logotype--dropbox {
+	width: 117px;
+	height: 31.03px;
+	padding-left: 5px;
+} 
 
+.main-content {
+	width: 800px;
+	margin: 180px auto 0 auto;
 }
-.our-logo div {
-	width: 778px;
-	border-radius: 3px;
-	border: 1px solid #eceded;
-	position: relative;
-}
-.our-logo img {
-	height: 100;
-	width: auto;
-	padding: 100px;
 
+.image-plank {
+	margin: 50px auto 0 auto;
+	width: 800px;
+}
+.content-plank {
+	margin: 50px auto 0 auto;
+	width: 585px;
+}
+.gallery-plank {
+	width: 950px;
+	height: 300px;
+	display: inline-block;
+	margin: 50px auto 0 auto;
+	float: left;
+	
+}
+.gallery-plank__image {
+	display: inline-grid;
+	margin: 0 auto;
+}
+.gallery-plank .desc {
+	text-align: center;
+}	
+
+.icon-gallery-plank {
+	width: 791.656px;
+	height: 340px;
+	margin: 50px auto 0 auto;
+	float: left;
+}
+.icon-gallery-image {
+	display: inline-grid;
+	margin: 0 auto;
+}
+
+.icon-gallery-plank .desc {
+	text-align: center;
 }
