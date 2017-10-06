@@ -47,17 +47,19 @@ table {
     border-spacing: 0;
 }
 
-
 body {
 	margin: 0;
+	padding: 0;
 	font-family: "AtlasGrotesk", "Open Sans", sans-serif;
 	font-size: 13px;
+	height: 100%;
+	width: 100%;
 }
 
 h2 {
 	font-family: "SharpGroteskWide", "Open Sans",sans-serif;
 	font-size: 40px;
-	font-weight: 400;
+	font-weight: bold;
 	margin: 2em auto;
 	width: 585px;
 }
@@ -66,17 +68,21 @@ h4 {
 	font-size: 20px;
 	font-weight: 400;
 	width: 585px;
-	margin: auto;
+	margin: 2em auto;
 }
 .content-plank {
 	margin: 50px 0 0 0;
 }
 p {
 	width: 585px;
-	margin: 20px auto 3px auto;
+	margin: 1em auto 1em auto;
 	object-position: center;
 	font-size: 18px;
+	font-weight: 400px;
 	line-height: 1.555;
+}
+content-plank p {
+	margin: 0 auto 1em auto;
 }
 
 
@@ -146,6 +152,8 @@ nav .arbor-logo__logotype.arbor-logo__logotype--dropbox {
 .content-plank {
 	margin: 50px auto 0 auto;
 	width: 585px;
+	height: auto;
+
 }
 .gallery-plank {
 	width: 950px;
@@ -153,27 +161,77 @@ nav .arbor-logo__logotype.arbor-logo__logotype--dropbox {
 	display: inline-block;
 	margin: 50px auto 0 auto;
 	float: left;
-	
+}
+
 }
 .gallery-plank__image {
 	display: inline-grid;
-	margin: 0 auto;
+	margin: 0 2em;
 }
 .gallery-plank .desc {
 	text-align: center;
+	margin: 1.5em auto;
+	font-size: 16px;
+	font-weight: 300;
+
 }	
 
 .icon-gallery-plank {
-	width: 791.656px;
+	width: 845px;
 	height: 340px;
-	margin: 50px auto 0 auto;
-	float: left;
+	display: inline-block;
+	margin: 80px auto 0 auto;
+	padding-bottom: 160px;
+	border-bottom: solid 1px #E6E8EB;
 }
 .icon-gallery-image {
 	display: inline-grid;
+	margin: 25px auto;
+	width: 33%;
+	height: auto;
+}
+.icon-gallery-image img {
 	margin: 0 auto;
 }
 
-.icon-gallery-plank .desc {
+.icon-gallery-row .desc {
 	text-align: center;
+	width: 100%;
+	margin: 25px auto;
+	font-size: 16px;
+	line-height: 1.65;
+	font-weight: 300;
+	color: #637282;
 }
+
+.footer {
+	height: 600px;
+	width: 100%;
+	background-color: #000;
+	color: #FFF;
+	display: block;
+	margin: 0;
+}
+.link-list {
+	height: 273px;
+	width: 80%;
+	padding: 60px 100px 100px 100px;
+	border-bottom: 1px solid #FFF;	
+	float: left;
+}
+.link-list-column {
+	display: inline-block;
+	float: left;
+	width: 16%;
+	padding: 1%;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.link-list-column li {
+	margin: 15px 0;
+}
+.footer h3 {
+	font-size: 1.5em;
+	margin: 30px 0;
+}
+
