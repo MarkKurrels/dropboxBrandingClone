@@ -60,7 +60,7 @@ h2 {
 	font-family: "SharpGroteskWide", "Open Sans",sans-serif;
 	font-size: 40px;
 	font-weight: bold;
-	margin: 2em auto;
+	margin: 2em auto 0 auto;
 	width: 585px;
 }
 
@@ -91,7 +91,7 @@ nav {
 	height: 78px;
 	position: fixed;
 	top: 0;
-	border-bottom: 2px solid #fbfbfc;
+	border-bottom: 2px solid #EEE;
 	background-color: #fff;
 	margin-bottom: 50px;
 	padding: 0;
@@ -101,7 +101,8 @@ nav {
 nav a {
 	float: right;
 	margin-top: 32px;
-	margin-left: 15px;
+	margin-left: 20px;
+	margin-right: 5px;
 	text-decoration: none;
 	font-size: 15px;
 	font-weight: 400;
@@ -111,14 +112,21 @@ nav a:hover {
 	text-decoration: underline;
 }
 nav .button  {
-	color: #fff;
 	margin-top: 22px;
-	margin-right: 6px;
-	padding: 10px;
-	background-color: #0062ff;
+	margin-right: 18px;
+	padding: 9px;
+	border: 1px solid #e0e0e0;
 }
-nav .button:hover {
+
+nav a.button:hover {
 	background-color: #3b85ff;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+}
+nav .button:active {
+	color: #FFF;
+	background-color: #0062FF;
 	text-decoration: none;
 }
 .nav-bar-logo a {
@@ -141,62 +149,82 @@ nav .arbor-logo__logotype.arbor-logo__logotype--dropbox {
 } 
 
 .main-content {
-	width: 800px;
+	width: 100%;
 	margin: 180px auto 0 auto;
 }
 
 .image-plank {
 	margin: 50px auto 0 auto;
 	width: 800px;
+	display: block;
 }
 .content-plank {
 	margin: 50px auto 0 auto;
-	width: 585px;
+	max-width: 585px;
+   	width: 83.33333%;
 	height: auto;
-
+	display: block;
 }
-.gallery-plank {
-	width: 950px;
-	height: 300px;
-	display: inline-block;
+
+.gallery-container {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 	margin: 50px auto 0 auto;
-	float: left;
+    height: 300px;
+    width: auto;
+    max-width: 1080px;
 }
 
+
+
+div.gallery-plank__image {
+	margin: 10px auto;
+   	max-height: 296px;
+   	max-width: 296px;
+    min-width: 30%;
+    min-height: auto;
+    float: left;
 }
-.gallery-plank__image {
-	display: inline-grid;
-	margin: 0 2em;
-}
-.gallery-plank .desc {
+
+.gallery-container .desc {
 	text-align: center;
 	margin: 1.5em auto;
 	font-size: 16px;
 	font-weight: 300;
+}
 
-}	
 
-.icon-gallery-plank {
-	width: 845px;
-	height: 340px;
-	display: inline-block;
-	margin: 80px auto 0 auto;
+
+
+.icon-gallery-container {
+	height: auto;
+	margin-top: 80px;
 	padding-bottom: 160px;
 	border-bottom: solid 1px #E6E8EB;
 }
-.icon-gallery-image {
-	display: inline-grid;
-	margin: 25px auto;
-	width: 33%;
-	height: auto;
+.icon-gallery-row {
+	width: 83.33%;	
+	margin: 80px auto 0 auto;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .icon-gallery-image img {
-	margin: 0 auto;
+	margin: 25px;
+	height: auto;
+	float: left;
 }
 
-.icon-gallery-row .desc {
+div.icon-gallery-image .desc {
 	text-align: center;
-	width: 100%;
 	margin: 25px auto;
 	font-size: 16px;
 	line-height: 1.65;
